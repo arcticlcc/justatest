@@ -1,4 +1,7 @@
 {
+    "type": "FeatureCollection",
+    "features": [
+{
     "type": "Feature",
     "geometry": {
     "type": "MultiPolygon",
@@ -818,4 +821,7 @@
     "properties": {
         "name": "Some States"
     }
+}
+
+    ]
 }
