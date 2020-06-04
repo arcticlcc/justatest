@@ -21,8 +21,8 @@
     "schema": {
       "@id": "ex:schema"
     },
-    "metadata": "ex:metadata",
-    "metadataInfo": "dcat:Resource",
+    "metadata": "dcat:Resource",
+    "metadataInfo": "dcat:Dataset",
     "language": "http://id.loc.gov/vocabulary/iso639-1/en",
     "resourceInfo": "dcat:Dataset",
     "citation": "sdo:CreativeWork",
@@ -88,7 +88,9 @@
   }],
   "metadata": {
     "metadataInfo": {
-      "@context": {"metadataIdentifier": "ex:metadataIdentifier"},
+      "@context": {
+        "metadataIdentifier": "ex:metadataIdentifier"
+      },
       "metadataIdentifier": {
         "@context": {
           "identifier": "dct:identifier"
