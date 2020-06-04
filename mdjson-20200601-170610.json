@@ -1,0 +1,136 @@
+{
+  "@context": {
+    "@base": "https://dcat.example.org/",
+    "ex": "https://dcat.example.org/",
+    "dcat": "https://www.w3.org/ns/dcat2#",
+    "dcatus": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld#",
+    "sdo": "https://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "contactId": {
+      "@id": "dct:indentifier",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "dct:indentifier",
+      "@type": "@id"
+    },
+    "contact": {
+      "@id": "ex:contact",
+      "@type": "foaf:Agent"
+    },
+    "schema": {
+      "@id": "ex:schema"
+    },
+    "metadata": "dcat:Resource",
+    "resourceInfo": "dcat:Dataset",
+    "citation": "sdo:CreativeWork",
+    "pointOfContact": {
+      "@id": "ex:pointOfContact",
+      "@container": "@set"
+    }
+  },
+  "schema": {
+    "@context": {
+      "name": "dcat:conformsTo"
+    },
+    "name": "mdJson",
+    "version": "2.7.0"
+  },
+
+  "contact": [{
+    "@context": {
+      "name": "contactPoint:fn",
+      "contactId": "@id"
+    },
+    "@type": ["dcatus:contactPoint", "dcat:contactPoint"],
+    "contactId": "039e6670-16af-4252-a4ec-32fe46e63b5b",
+    "isOrganization": false,
+    "name": "Bender, A. M."
+  }, {
+    "@context": {
+      "name": "contactPoint:fn",
+      "contactId": "@id"
+    },
+    "@type": ["dcatus:contactPoint", "dcat:contactPoint"],
+    "contactId": "4f2603fd-812b-44d9-bf74-72c993720db7",
+    "isOrganization": false,
+    "name": "Blair E Tirpak",
+    "memberOfOrganization": ["3929b7e2-d0f4-4bf2-bcf4-0c5948aa432f"],
+    "phone": [{
+      "phoneNumber": "337-266-8619",
+      "service": ["voice"]
+    }],
+    "address": [{
+      "addressType": ["mailing and physical"],
+      "deliveryPoint": ["700 Cajundome Blvd"],
+      "city": "Lafayette",
+      "administrativeArea": "LA",
+      "postalCode": "70506",
+      "country": "United States"
+    }],
+    "electronicMailAddress": ["btirpak@usgs.gov"]
+  }, {
+    "@type": ["dcatus:contactPoint", "dcat:contactPoint", "sdo:Organization"],
+    "contactId": "3929b7e2-d0f4-4bf2-bcf4-0c5948aa432f",
+    "isOrganization": true,
+    "name": "U.S. Geological Survey, Southeast Region"
+  }, {
+    "@type": ["dcatus:contactPoint", "dcat:contactPoint", "sdo:Organization"],
+    "contactId": "00a31c60-0cbc-490c-8107-a80e0b078f93",
+    "isOrganization": false,
+    "name": "Conservation Biology Institute",
+    "address": [{
+      "addressType": ["mailing"],
+      "description": "Corvallis, Oregon"
+    }]
+  }],
+  "metadata": {
+    "metadataInfo": {
+      "metadataIdentifier": {
+        "identifier": "ef460287-f974-47ee-a24d-c0cb2569b8cd",
+        "namespace": "urn:uuid"
+      }
+    },
+    "resourceInfo": {
+      "resourceType": [{
+        "type": "application"
+      }],
+      "citation": {
+        "@context": {
+          "title": {
+            "@id": "dcat:title"
+          }
+        },
+        "title": "Title of test"
+
+      },
+      "defaultResourceLocale": {
+        "language": "eng",
+        "characterSet": "UTF-8",
+        "country": "USA"
+      },
+      "pointOfContact": [{
+        "@type": "sdo:Role",
+        "@context": {
+          "role": {
+            "@id": "sdo:roleName"
+          },
+          "party": {
+            "@container": "@set",
+            "@id": "dcat:contactPoint"
+          }
+        },
+        "party": [{
+          "contactId": "039e6670-16af-4252-a4ec-32fe46e63b5b"
+        }, {
+          "contactId": "4f2603fd-812b-44d9-bf74-72c993720db7"
+        }, {
+          "contactId": "00a31c60-0cbc-490c-8107-a80e0b078f93"
+        }],
+        "role": "administrator"
+      }]
+    }
+  },
+  "metadataRepository": [],
+  "dataDictionary": []
+}
