@@ -21,7 +21,7 @@
     "schema": {
       "@id": "ex:schema"
     },
-    "metadata": "dcat:Resource",
+    "metadata": "ex:metadata",
     "metadataInfo": "dcat:Resource",
     "language": "http://id.loc.gov/vocabulary/iso639-1/en",
     "resourceInfo": "dcat:Dataset",
