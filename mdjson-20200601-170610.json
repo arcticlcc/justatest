@@ -3,7 +3,6 @@
     "@base": "https://dcat.example.org/",
     "ex": "https://dcat.example.org/",
     "dcatus": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld#",
-    "dcat": "https://www.w3.org/ns/dcat2#",
     "adms": "https://www.w3.org/ns/adms#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "w3cgeo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
