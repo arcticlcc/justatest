@@ -120,7 +120,7 @@
       "citation": {
         "@context": {
           "title": {
-            "@id": "dcat:title"
+            "@id": "dct:title"
           }
         },
         "title": "Title of test"
