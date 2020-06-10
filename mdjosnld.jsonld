@@ -1,0 +1,139 @@
+{
+  "@context": {
+    "@base": "https://mdjson.adiwg.org/",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "sdo": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+
+
+    "abstract": "dct:description",
+    "identifier": "dcat:identifier",
+    "citation": "sdo:citation",
+    "schema": "@nest",
+    "resourceInfo": "@nest",
+    "metadataInfo": "@nest",
+    "metadataIdentifier": "@nest",
+    "metadata": {
+      "@id": "dcat:dataset",
+      "@type": "@id"
+    },
+    "metadataRepository": "@nest",
+    "contactId": {
+      "@id": "dct:indentifier",
+      "@type": "@id"
+    },
+    "contact": "foaf:Agent",
+    "electronicMailAddress": {
+      "@id": "foaf:mbox",
+      "@container": "@set"
+    },
+    "pointOfContact": {
+      "@id": "dcat:contactPoint",
+      "@container": "@set"
+    },
+    "role": {
+      "@id": "sdo:roleName"
+    },
+    "party": {
+      "@container": "@set",
+      "@id": "dcat:contactPoint"
+    },
+    "language": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
+
+
+  },
+  "@type": "dcat:Catalog",
+  "metadata": {
+    "@context": {
+      "description": {
+        "@id": "dct:description",
+        "@type": "@id"
+      }
+
+    },
+    "metadataInfo": {
+      "metadataIdentifier": {
+        "@context": {
+          "identifier": "dcat:uuid:identifier"
+
+        },
+        "identifier": "493cb003-3ad1-4138-92dc-768bdd63ce97",
+        "namespace": "urn:uuid"
+
+      },
+      "resourceInfo": {
+        "abstract": "teer ertrtet rtrtee",
+        "resourceType": [{
+          "type": "drawing"
+        }],
+        "citation": {
+          "@context": {
+            "title": "dct:title",
+            "identifier": {
+              "@id": "dct:identifier",
+              "@container": "@set"
+            }
+          },
+          "title": "zzz test zzz",
+          "identifier": [{
+            "identifier": "12345",
+            "namespace": "fake:us:org"
+          }]
+        },
+        "pointOfContact": [{
+          "party": [{
+            "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
+          }],
+          "role": "administrator"
+        }],
+        "defaultResourceLocale": {
+          "language": "eng",
+          "characterSet": "UTF-8",
+          "country": "USA"
+        }
+      }
+    },
+    "contact": [{
+      "@context": {
+        "name": "contactPoint:fn",
+        "contactId": "@id"
+
+      },
+      "contactId": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
+      "isOrganization": true,
+      "name": "Science Agency",
+      "address": [{
+        "addressType": ["mailing"],
+        "deliveryPoint": ["100 Pleasant Avenue"],
+        "country": "USA",
+        "postalCode": "00000",
+        "city": "San Francisco",
+        "administrativeArea": "CA"
+      }],
+      "onlineResource": [{
+        "name": "Science Agency website",
+        "uri": "https://www.scienceagency.gov"
+      }],
+      "contactType": "federal"
+    }, {
+      "@context": {
+        "name": "contactPoint:fn",
+        "contactId": "@id"
+      },
+      "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269",
+      "isOrganization": false,
+      "name": "Jane Brown",
+      "memberOfOrganization": ["95fd76ce-2668-4f0c-be1d-e50b9ef20c10"],
+      "electronicMailAddress": ["jane_brown@scienceagency.gov"],
+      "positionName": "Scientist",
+      "contactType": "federal"
+    }]
+  },
+  "metadataRepository": [{
+    "@context": {
+      "title": "dcat:title"
+    },
+    "title": "r123"
+  }]
+}
