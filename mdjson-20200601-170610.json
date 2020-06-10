@@ -1,165 +1,136 @@
 {
   "@context": {
-    "@base": "https://dcat.example.org/",
-    "ex": "https://dcat.example.org/",
-    "dcatus": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld#",
-    "adms": "https://www.w3.org/ns/adms#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "w3cgeo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "geosparql": "http://www.opengis.net/ont/geosparql#",
-    "ex": "https://dcat.example.org/",
+    "@base": "https://mdjson.adiwg.org/",
+    "dcat": "https://www.w3.org/ns/dcat#",
     "dct": "http://purl.org/dc/terms/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "time": "http://www.w3.org/2006/time#",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "locn": "http://www.w3.org/ns/locn#",
-    "foaf": "http://xmlns.com/foaf/0.1/",
     "sdo": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+
+
+    "abstract": "dct:description",
+    "identifier": "dcat:identifier",
+    "citation": "sdo:citation",
+    "schema": "@nest",
+    "resourceInfo": "@nest",
+    "metadata": "@nest",
+    "metadataInfo": "@nest",
+    "metadataIdentifier": "@nest",
+    "metadataRepository": "dcat:Catalog",
     "contactId": {
       "@id": "dct:indentifier",
       "@type": "@id"
     },
-    "identifier": {
-      "@id": "dct:indentifier",
-      "@type": "@id"
-    },
-    "metadataRepository": "dcat:Catalog",
-    "contact": {
-      "@id": "ex:contact",
-      "@type": "foaf:Agent"
-    },
-    "schema": {
-      "@id": "ex:schema"
-    },
-    "metadata": "dcat:dataset",
-    "metadataInfo": "dcat:Dataset",
-    "language": "http://id.loc.gov/vocabulary/iso639-1/en",
-    "resourceInfo": "dcat:Dataset",
-    "citation": "sdo:CreativeWork",
-    "pointOfContact": {
-      "@id": "ex:pointOfContact",
+    "contact": "foaf:Agent",
+    "electronicMailAddress": {
+      "@id": "foaf:mbox",
       "@container": "@set"
-    }
-  },
-  "schema": {
-    "@context": {
-      "name": "dcat:conformsTo"
     },
-    "name": "mdJson",
-    "version": "2.7.0"
-  },
+    "pointOfContact": {
+      "@id": "dcat:contactPoint",
+      "@container": "@set"
+    },
+    "role": {
+      "@id": "sdo:roleName"
+    },
+    "party": {
+      "@container": "@set",
+      "@id": "dcat:contactPoint"
+    },
+    "language": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
 
-  "contact": [{
-    "@context": {
-      "name": "contactPoint:fn",
-      "contactId": "@id"
-    },
-    "@type": ["dcatus:contactPoint", "dcat:contactPoint"],
-    "contactId": "039e6670-16af-4252-a4ec-32fe46e63b5b",
-    "isOrganization": false,
-    "name": "Bender, A. M."
-  }, {
-    "@context": {
-      "name": "contactPoint:fn",
-      "contactId": "@id"
-    },
-    "@type": ["dcatus:contactPoint", "dcat:contactPoint"],
-    "contactId": "4f2603fd-812b-44d9-bf74-72c993720db7",
-    "isOrganization": false,
-    "name": "Blair E Tirpak",
-    "memberOfOrganization": ["3929b7e2-d0f4-4bf2-bcf4-0c5948aa432f"],
-    "phone": [{
-      "phoneNumber": "337-266-8619",
-      "service": ["voice"]
-    }],
-    "address": [{
-      "addressType": ["mailing and physical"],
-      "deliveryPoint": ["700 Cajundome Blvd"],
-      "city": "Lafayette",
-      "administrativeArea": "LA",
-      "postalCode": "70506",
-      "country": "United States"
-    }],
-    "electronicMailAddress": ["btirpak@usgs.gov"]
-  }, {
-    "@type": ["dcatus:contactPoint", "dcat:contactPoint", "sdo:Organization"],
-    "contactId": "3929b7e2-d0f4-4bf2-bcf4-0c5948aa432f",
-    "isOrganization": true,
-    "name": "U.S. Geological Survey, Southeast Region"
-  }, {
-    "@type": ["dcatus:contactPoint", "dcat:contactPoint", "sdo:Organization"],
-    "contactId": "00a31c60-0cbc-490c-8107-a80e0b078f93",
-    "isOrganization": false,
-    "name": "Conservation Biology Institute",
-    "address": [{
-      "addressType": ["mailing"],
-      "description": "Corvallis, Oregon"
-    }]
-  }],
+
+  },
+  "@type": "dcat:Dataset",
   "metadata": {
+    "@context": {
+      "description": {
+        "@id": "dct:description",
+        "@type": "@id"
+      }
+
+    },
     "metadataInfo": {
-      "@context": {
-        "metadataIdentifier": "ex:metadataIdentifier"
-      },
       "metadataIdentifier": {
         "@context": {
-          "identifier": "dct:identifier"
+          "identifier": "dcat:uuid:identifier"
+
         },
-        "identifier": "ef460287-f974-47ee-a24d-c0cb2569b8cd",
+        "identifier": "493cb003-3ad1-4138-92dc-768bdd63ce97",
         "namespace": "urn:uuid"
-      }
-    },
-    "resourceInfo": {
-      "@type": "dcat:Dataset",
-      "resourceType": [{
-        "type": "application"
-      }],
-      "citation": {
-        "@context": {
-          "title": {
-            "@id": "dct:title"
-          }
-        },
-        "title": "Title of test"
 
       },
-      "defaultResourceLocale": {
-        "language": "eng",
-        "characterSet": "UTF-8",
-        "country": "USA"
-      },
-      "pointOfContact": [{
-        "@type": "sdo:Role",
-        "@context": {
-          "role": {
-            "@id": "sdo:roleName"
-          },
-          "party": {
-            "@container": "@set",
-            "@id": "dcat:contactPoint"
-          }
-        },
-        "party": [{
-          "contactId": "039e6670-16af-4252-a4ec-32fe46e63b5b"
-        }, {
-          "contactId": "4f2603fd-812b-44d9-bf74-72c993720db7"
-        }, {
-          "contactId": "00a31c60-0cbc-490c-8107-a80e0b078f93"
+      "resourceInfo": {
+        "abstract": "teer ertrtet rtrtee",
+        "resourceType": [{
+          "type": "drawing"
         }],
-        "role": "administrator"
-      }]
-    }
+        "citation": {
+          "@context": {
+            "title": "dct:title",
+            "identifier": {
+              "@id": "dct:identifier",
+              "@container": "@set"
+            }
+          },
+          "title": "zzz test zzz",
+          "identifier": [{
+            "identifier": "12345",
+            "namespace": "fake:us:org"
+          }]
+        },
+        "pointOfContact": [{
+          "party": [{
+            "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
+          }],
+          "role": "administrator"
+        }],
+        "defaultResourceLocale": {
+          "language": "eng",
+          "characterSet": "UTF-8",
+          "country": "USA"
+        }
+      }
+    },
+    "contact": [{
+      "@context": {
+        "name": "contactPoint:fn",
+        "contactId": "@id"
+
+      },
+      "contactId": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
+      "isOrganization": true,
+      "name": "Science Agency",
+      "address": [{
+        "addressType": ["mailing"],
+        "deliveryPoint": ["100 Pleasant Avenue"],
+        "country": "USA",
+        "postalCode": "00000",
+        "city": "San Francisco",
+        "administrativeArea": "CA"
+      }],
+      "onlineResource": [{
+        "name": "Science Agency website",
+        "uri": "https://www.scienceagency.gov"
+      }],
+      "contactType": "federal"
+    }, {      "@context": {
+        "name": "contactPoint:fn",
+        "contactId": "@id"
+      },
+      "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269",
+      "isOrganization": false,
+      "name": "Jane Brown",
+      "memberOfOrganization": ["95fd76ce-2668-4f0c-be1d-e50b9ef20c10"],
+      "electronicMailAddress": ["jane_brown@scienceagency.gov"],
+      "positionName": "Scientist",
+      "contactType": "federal"
+    }]
   },
   "metadataRepository": [{
     "@context": {
       "title": "dcat:title"
     },
-    "@id": "ex:metadataRepository",
     "@type": "metadataRepository",
     "title": "r123"
-  }],
-  "dataDictionary": []
+  }]
 }
