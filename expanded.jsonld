@@ -1,0 +1,49 @@
+[{
+  "@type": [
+    "https://www.w3.org/ns/dcat#Catalog"
+  ],
+  "http://xmlns.com/foaf/0.1/Agent": [{
+      "@id": "https://mdjson.adiwg.org/95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
+      "contactPoint:fn": [{
+        "@value": "Science Agency"
+      }]
+    },
+    {
+      "@id": "https://mdjson.adiwg.org/132314a1-5299-43db-9fd1-dc6bd0f5d269",
+      "http://xmlns.com/foaf/0.1/mbox": [{
+        "@value": "jane_brown@scienceagency.gov"
+      }],
+      "contactPoint:fn": [{
+        "@value": "Jane Brown"
+      }]
+    }
+  ],
+  "https://www.w3.org/ns/dcat#dataset": [{
+    "https://www.w3.org/ns/dcat#identifier": [{
+      "@value": "493cb003-3ad1-4138-92dc-768bdd63ce97"
+    }],
+    "http://purl.org/dc/terms/description": [{
+      "@value": "teer ertrtet rtrtee"
+    }],
+    "https://schema.org/citation": [{
+      "http://purl.org/dc/terms/identifier": [{
+        "http://purl.org/dc/terms/identifier": [{
+          "@value": "12345"
+        }]
+      }],
+      "http://purl.org/dc/terms/title": [{
+        "@value": "zzz test zzz"
+      }]
+    }],
+    "https://www.w3.org/ns/dcat#contactPoint": [{
+      "https://www.w3.org/ns/dcat#contactPoint": [{
+        "http://purl.org/dc/terms/indentifier": [{
+          "@id": "https://mdjson.adiwg.org/132314a1-5299-43db-9fd1-dc6bd0f5d269"
+        }]
+      }],
+      "https://schema.org/roleName": [{
+        "@value": "administrator"
+      }]
+    }]
+  }]
+}]
