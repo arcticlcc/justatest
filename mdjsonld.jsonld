@@ -1,19 +1,28 @@
 {
   "@context": {
     "@base": "https://mdjson.adiwg.org/",
-    "dcat": "https://www.w3.org/ns/dcat#",
-    "dct": "http://purl.org/dc/terms/",
+
+    "adms" : "https://www.w3.org/ns/adms#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "w3cgeo" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "geosparql" : "http://www.opengis.net/ont/geosparql#",
+    "ex" : "https://dcat.example.org/",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "time" : "http://www.w3.org/2006/time#",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "locn" : "http://www.w3.org/ns/locn#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
     "sdo": "https://schema.org/",
-    "foaf": "http://xmlns.com/foaf/0.1/",
 
 
     "abstract": "dct:description",
-    "identifier": "dcat:identifier",
     "citation": "sdo:citation",
     "schema": "@nest",
     "metadataInfo": "@nest",
-    "metadataIdentifier": "@nest",
-    "metid": "metadataIdentifier",
     "metadata": {
       "@id": "dcat:dataset",
       "@type": "@id"
@@ -57,9 +66,12 @@
 
     },
     "metadataInfo": {
+      "@context": {
+        "metadataIdentifier": "@nest"
+      },
       "metadataIdentifier": {
         "@context": {
-          "identifier": "dcat:uuid:identifier"
+          "identifier": "dct:identifier"
 
         },
         "identifier": "493cb003-3ad1-4138-92dc-768bdd63ce97",
@@ -86,15 +98,15 @@
       "citation": {
         "@context": {
           "title": "dct:title",
-          "identifier": {
-            "@id": "dct:identifier",
-            "@container": "@set"
-          }
+          "identifier": "@nest"
         },
         "title": "zzz test zzz",
         "identifier": [{
           "@context": {
-            "identifier": "dcat:uuid:identifier"
+            "identifier": {
+              "@id": "dct:indentifier",
+              "@type": "@id"
+            }
           },
           "identifier": "12345",
           "namespace": "fake:us:org"
