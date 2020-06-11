@@ -23,10 +23,7 @@
     "citation": "sdo:citation",
     "schema": "@nest",
     "metadataInfo": "@nest",
-    "metadata": {
-      "@id": "dcat:dataset",
-      "@type": "@id"
-    },
+    "metadata": "@nest",
     "resourceInfo": {
       "@id": "dcat:Dataset",
       "@type": "@id"
