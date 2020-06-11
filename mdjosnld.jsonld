@@ -61,75 +61,75 @@
         "identifier": "493cb003-3ad1-4138-92dc-768bdd63ce97",
         "namespace": "urn:uuid"
 
-      },
-      "resourceInfo": {
-        "abstract": "teer ertrtet rtrtee",
-        "resourceType": [{
-          "type": "drawing"
-        }],
-        "citation": {
-          "@context": {
-            "title": "dct:title",
-            "identifier": {
-              "@id": "dct:identifier",
-              "@container": "@set"
-            }
-          },
-          "title": "zzz test zzz",
-          "identifier": [{
-            "identifier": "12345",
-            "namespace": "fake:us:org"
-          }]
-        },
-        "pointOfContact": [{
-          "party": [{
-            "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
-          }],
-          "role": "administrator"
-        }],
-        "defaultResourceLocale": {
-          "language": "eng",
-          "characterSet": "UTF-8",
-          "country": "USA"
-        }
       }
     },
-    "contact": [{
-      "@context": {
-        "name": "contactPoint:fn",
-        "contactId": "@id"
-
-      },
-      "contactId": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
-      "isOrganization": true,
-      "name": "Science Agency",
-      "address": [{
-        "addressType": ["mailing"],
-        "deliveryPoint": ["100 Pleasant Avenue"],
-        "country": "USA",
-        "postalCode": "00000",
-        "city": "San Francisco",
-        "administrativeArea": "CA"
+    "resourceInfo": {
+      "abstract": "teer ertrtet rtrtee",
+      "resourceType": [{
+        "type": "drawing"
       }],
-      "onlineResource": [{
-        "name": "Science Agency website",
-        "uri": "https://www.scienceagency.gov"
-      }],
-      "contactType": "federal"
-    }, {
-      "@context": {
-        "name": "contactPoint:fn",
-        "contactId": "@id"
+      "citation": {
+        "@context": {
+          "title": "dct:title",
+          "identifier": {
+            "@id": "dct:identifier",
+            "@container": "@set"
+          }
+        },
+        "title": "zzz test zzz",
+        "identifier": [{
+          "identifier": "12345",
+          "namespace": "fake:us:org"
+        }]
       },
-      "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269",
-      "isOrganization": false,
-      "name": "Jane Brown",
-      "memberOfOrganization": ["95fd76ce-2668-4f0c-be1d-e50b9ef20c10"],
-      "electronicMailAddress": ["jane_brown@scienceagency.gov"],
-      "positionName": "Scientist",
-      "contactType": "federal"
-    }]
+      "pointOfContact": [{
+        "party": [{
+          "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
+        }],
+        "role": "administrator"
+      }],
+      "defaultResourceLocale": {
+        "language": "eng",
+        "characterSet": "UTF-8",
+        "country": "USA"
+      }
+    }
   },
+  "contact": [{
+    "@context": {
+      "name": "contactPoint:fn",
+      "contactId": "@id"
+
+    },
+    "contactId": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
+    "isOrganization": true,
+    "name": "Science Agency",
+    "address": [{
+      "addressType": ["mailing"],
+      "deliveryPoint": ["100 Pleasant Avenue"],
+      "country": "USA",
+      "postalCode": "00000",
+      "city": "San Francisco",
+      "administrativeArea": "CA"
+    }],
+    "onlineResource": [{
+      "name": "Science Agency website",
+      "uri": "https://www.scienceagency.gov"
+    }],
+    "contactType": "federal"
+  }, {
+    "@context": {
+      "name": "contactPoint:fn",
+      "contactId": "@id"
+    },
+    "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269",
+    "isOrganization": false,
+    "name": "Jane Brown",
+    "memberOfOrganization": ["95fd76ce-2668-4f0c-be1d-e50b9ef20c10"],
+    "electronicMailAddress": ["jane_brown@scienceagency.gov"],
+    "positionName": "Scientist",
+    "contactType": "federal"
+  }],
   "metadataRepository": [{
     "@context": {
       "title": "dcat:title"
