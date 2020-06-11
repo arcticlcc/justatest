@@ -1,85 +1,108 @@
-[
-  {
-    "@type": [
-      "https://www.w3.org/ns/dcat#Catalog"
-    ],
-    "http://xmlns.com/foaf/0.1/Agent": [
-      {
-        "@id": "https://mdjson.adiwg.org/95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
-        "contactPoint:fn": [
-          {
-            "@value": "Science Agency"
-          }
-        ]
-      },
-      {
-        "@id": "https://mdjson.adiwg.org/132314a1-5299-43db-9fd1-dc6bd0f5d269",
-        "http://xmlns.com/foaf/0.1/mbox": [
-          {
-            "@value": "jane_brown@scienceagency.gov"
-          }
-        ],
-        "contactPoint:fn": [
-          {
-            "@value": "Jane Brown"
-          }
-        ]
+{
+  "@context": {
+    "@base": "https://mdjson.adiwg.org/",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "sdo": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "abstract": "dct:description",
+    "identifier": "dcat:identifier",
+    "citation": "sdo:citation",
+    "schema": "@nest",
+    "metadataInfo": "@nest",
+    "metadataIdentifier": "@nest",
+    "metid": "metadataIdentifier",
+    "metadata": {
+      "@id": "dcat:dataset",
+      "@type": "@id"
+    },
+    "resourceInfo": {
+      "@id": "dcat:Dataset",
+      "@type": "@id"
+    },
+    "metadataRepository": "@nest",
+    "contactId": {
+      "@id": "dct:indentifier",
+      "@type": "@id"
+    },
+    "contact": "foaf:Agent",
+    "electronicMailAddress": {
+      "@id": "foaf:mbox",
+      "@container": "@set"
+    },
+    "pointOfContact": {
+      "@id": "dcat:contactPoint",
+      "@container": "@set"
+    },
+    "role": {
+      "@id": "sdo:roleName"
+    },
+    "party": {
+      "@container": "@set",
+      "@id": "dcat:contactPoint"
+    },
+    "language": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "dcat:Catalog",
+      "contact": [
+        {
+          "@id": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10"
+        },
+        {
+          "@id": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
+        }
+      ],
+      "metadata": "_:b1"
+    },
+    {
+      "@id": "_:b1",
+      "resourceInfo": "_:b2",
+      "identifier": "493cb003-3ad1-4138-92dc-768bdd63ce97"
+    },
+    {
+      "@id": "_:b2",
+      "abstract": "teer ertrtet rtrtee",
+      "dct:type": "drawing",
+      "language": "eng",
+      "party": [
+        {
+          "@id": "_:b3"
+        }
+      ],
+      "identifier": {
+        "@id": "_:b5"
       }
-    ],
-    "https://www.w3.org/ns/dcat#dataset": [
-      {
-        "https://www.w3.org/ns/dcat#Dataset": [
-          {
-            "http://purl.org/dc/terms/description": [
-              {
-                "@value": "teer ertrtet rtrtee"
-              }
-            ],
-            "https://www.w3.org/ns/dcat#contactPoint": [
-              {
-                "https://www.w3.org/ns/dcat#contactPoint": [
-                  {
-                    "http://purl.org/dc/terms/indentifier": [
-                      {
-                        "@id": "https://mdjson.adiwg.org/132314a1-5299-43db-9fd1-dc6bd0f5d269"
-                      }
-                    ]
-                  }
-                ],
-                "https://schema.org/roleName": [
-                  {
-                    "@value": "administrator"
-                  }
-                ]
-              }
-            ],
-            "http://purl.org/dc/terms/type": [
-              {
-                "@value": "drawing"
-              }
-            ],
-            "https://www.w3.org/ns/dcat#identifier": [
-              {
-                "https://www.w3.org/ns/dcat#uuid:identifier": [
-                  {
-                    "@value": "12345"
-                  }
-                ]
-              }
-            ],
-            "https://www.loc.gov/standards/iso639-2/php/code_list.php": [
-              {
-                "@value": "eng"
-              }
-            ]
-          }
-        ],
-        "https://www.w3.org/ns/dcat#identifier": [
-          {
-            "@value": "493cb003-3ad1-4138-92dc-768bdd63ce97"
-          }
-        ]
-      }
-    ]
-  }
-]
+    },
+    {
+      "@id": "_:b3",
+      "role": "administrator",
+      "party": [
+        {
+          "@id": "_:b4"
+        }
+      ]
+    },
+    {
+      "@id": "_:b4",
+      "contactId": "132314a1-5299-43db-9fd1-dc6bd0f5d269"
+    },
+    {
+      "@id": "_:b5",
+      "dcat:uuid:identifier": "12345"
+    },
+    {
+      "@id": "132314a1-5299-43db-9fd1-dc6bd0f5d269",
+      "contactPoint:fn": "Jane Brown",
+      "electronicMailAddress": [
+        "jane_brown@scienceagency.gov"
+      ]
+    },
+    {
+      "@id": "95fd76ce-2668-4f0c-be1d-e50b9ef20c10",
+      "contactPoint:fn": "Science Agency"
+    }
+  ]
+}
