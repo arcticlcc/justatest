@@ -11,11 +11,15 @@
     "identifier": "dcat:identifier",
     "citation": "sdo:citation",
     "schema": "@nest",
-    "resourceInfo": "@nest",
     "metadataInfo": "@nest",
     "metadataIdentifier": "@nest",
+    "metid": "metadataIdentifier",
     "metadata": {
       "@id": "dcat:dataset",
+      "@type": "@id"
+    },
+    "resourceInfo": {
+      "@id": "dcat:Dataset",
       "@type": "@id"
     },
     "metadataRepository": "@nest",
@@ -64,8 +68,19 @@
       }
     },
     "resourceInfo": {
+      "@context": {
+        "citation": "@nest",
+        "defaultResourceLocale": "@nest",
+        "resourceType": {
+          "@id": "dct:type",
+          "@container": "@set"
+        }
+      },
       "abstract": "teer ertrtet rtrtee",
       "resourceType": [{
+        "@context": {
+          "type": "@value"
+        },
         "type": "drawing"
       }],
       "citation": {
@@ -78,6 +93,9 @@
         },
         "title": "zzz test zzz",
         "identifier": [{
+          "@context": {
+            "identifier": "dcat:uuid:identifier"
+          },
           "identifier": "12345",
           "namespace": "fake:us:org"
         }]
